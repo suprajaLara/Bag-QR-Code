@@ -32,7 +32,7 @@ const AdminPage = () => {
         {userId && (
           <Box mt={3}>
             <Typography variant="h6">QR Code for UserId: {userId}</Typography>
-            <QRCodeCanvas value={`http://localhost:3000/user/${userId}`} size={200} />
+            <QRCodeCanvas value={`${window.location.origin}/user/${userId}`} size={200} />
           </Box>
         )}
       </Paper>
